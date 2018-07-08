@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="addressbookpage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="addresstablemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="askpassphrasedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bantablemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bitcoinaddressvalidator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bitcoingui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bitcoinstrings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bitcoinunits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clientmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="coincontroldialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="coincontroltreewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="csvmodelwriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="editaddressdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="guiutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="modaloverlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="networkstyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="notificator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="openuridialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="optionsdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="optionsmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="paymentrequest.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="paymentrequestplus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="paymentserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="peertablemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="platformstyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qvalidatedlineedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qvaluecombobox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="receivecoinsdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="receiverequestdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="recentrequeststablemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sendcoinsdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sendcoinsentry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="signverifymessagedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="splashscreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trafficgraphwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transactiondesc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transactiondescdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transactionfilterproxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transactionrecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transactiontablemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transactionview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utilitydialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="walletframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="walletmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="walletmodeltransaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="walletview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="winshutdownmonitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="bitcoin.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="addressbookpage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="addresstablemodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="askpassphrasedialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="bantablemodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="bitcoinaddressvalidator.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="bitcoinamountfield.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="bitcoingui.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="bitcoinunits.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="clientmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="coincontroldialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="coincontroltreewidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="csvmodelwriter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="editaddressdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="guiutil.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="intro.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="macdockiconhandler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="macnotificationhandler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="modaloverlay.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="notificator.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="openuridialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="optionsdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="optionsmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="overviewpage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="paymentserver.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="peertablemodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qvalidatedlineedit.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="qvaluecombobox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="receivecoinsdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="receiverequestdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="recentrequeststablemodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="rpcconsole.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="sendcoinsdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="sendcoinsentry.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="signverifymessagedialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="splashscreen.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="trafficgraphwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="transactiondesc.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="transactiondescdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="transactionfilterproxy.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="transactiontablemodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="transactionview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="utilitydialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="walletframe.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="walletmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="walletview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="bitcoinamountfield.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="rpcconsole.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="overviewpage.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="intro.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="bitcoin.cpp">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="guiconstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="networkstyle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="paymentrequest.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="paymentrequestplus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="platformstyle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="transactionrecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="walletmodeltransaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="forms\addressbookpage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\askpassphrasedialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\coincontroldialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\debugwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\editaddressdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\helpmessagedialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\intro.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\modaloverlay.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\openuridialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\optionsdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\overviewpage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\receivecoinsdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\receiverequestdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\sendcoinsdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\sendcoinsentry.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\signverifymessagedialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\transactiondescdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

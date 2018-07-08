@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;HAVE_CONFIG_H;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;..;..\config;..\univalue\include;C:\src\vcpkg-master\installed\x86-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;C:\src\vcpkg-master\installed\x86-windows-static\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;libprotobuf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;..;..\config;..\univalue\include;C:\src\vcpkg-master\installed\x86-windows-static\include;%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>UNICODE;WIN32;WIN64;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;HAVE_CONFIG_H;_DEBUG;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>WIN64;UNICODE;_UNICODE;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions> /SUBSYSTEM:WINDOWS</AdditionalOptions>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>WIN64;UNICODE;_UNICODE;WIN32;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_NO_DEBUG;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>UNICODE;WIN32;WIN64;QT_NO_DEBUG;NDEBUG;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>WIN64;QT_NO_DEBUG;NDEBUG;UNICODE;_UNICODE;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions> /SUBSYSTEM:WINDOWS</AdditionalOptions>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>WIN64;QT_NO_DEBUG;NDEBUG;UNICODE;_UNICODE;WIN32;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="addressbookpage.cpp" />
+    <ClCompile Include="addresstablemodel.cpp" />
+    <ClCompile Include="askpassphrasedialog.cpp" />
+    <ClCompile Include="bantablemodel.cpp" />
+    <QtMoc Include="bitcoin.cpp">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">input</DynamicSource>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;.\..;.\..\config;.\..\univalue\include;C:\src\vcpkg-master\installed\x86-windows-static\include</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MINIUPNP_STATICLIB;LEVELDB_STATIC;LEVELDB_PLATFORM_WINDOWS;LEVELDB_WITH_SNAPPY;CRC32C_STATIC;SNAPPY_STATIC;UNICODE;WIN32;WIN64;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;HAVE_CONFIG_H;_DEBUG;_UNICODE</Define>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;UNICODE;_UNICODE;WIN32</Define>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">input</DynamicSource>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UNICODE;WIN32;WIN64;QT_NO_DEBUG;NDEBUG</Define>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WIN64;QT_NO_DEBUG;NDEBUG;UNICODE;_UNICODE;WIN32</Define>
+    </QtMoc>
+    <ClCompile Include="bitcoinaddressvalidator.cpp" />
+    <ClCompile Include="bitcoingui.cpp" />
+    <ClCompile Include="bitcoinstrings.cpp" />
+    <ClCompile Include="bitcoinunits.cpp" />
+    <ClCompile Include="clientmodel.cpp" />
+    <ClCompile Include="coincontroldialog.cpp" />
+    <ClCompile Include="coincontroltreewidget.cpp" />
+    <ClCompile Include="csvmodelwriter.cpp" />
+    <ClCompile Include="editaddressdialog.cpp" />
+    <ClCompile Include="guiutil.cpp" />
+    <ClCompile Include="modaloverlay.cpp" />
+    <ClCompile Include="networkstyle.cpp" />
+    <ClCompile Include="notificator.cpp" />
+    <ClCompile Include="openuridialog.cpp" />
+    <ClCompile Include="optionsdialog.cpp" />
+    <ClCompile Include="optionsmodel.cpp" />
+    <ClCompile Include="paymentrequest.pb.cc" />
+    <ClCompile Include="paymentrequestplus.cpp" />
+    <ClCompile Include="paymentserver.cpp" />
+    <ClCompile Include="peertablemodel.cpp" />
+    <ClCompile Include="platformstyle.cpp" />
+    <ClCompile Include="qvalidatedlineedit.cpp" />
+    <ClCompile Include="qvaluecombobox.cpp" />
+    <ClCompile Include="receivecoinsdialog.cpp" />
+    <ClCompile Include="receiverequestdialog.cpp" />
+    <ClCompile Include="recentrequeststablemodel.cpp" />
+    <ClCompile Include="sendcoinsdialog.cpp" />
+    <ClCompile Include="sendcoinsentry.cpp" />
+    <ClCompile Include="signverifymessagedialog.cpp" />
+    <ClCompile Include="splashscreen.cpp" />
+    <ClCompile Include="trafficgraphwidget.cpp" />
+    <ClCompile Include="transactiondesc.cpp" />
+    <ClCompile Include="transactiondescdialog.cpp" />
+    <ClCompile Include="transactionfilterproxy.cpp" />
+    <ClCompile Include="transactionrecord.cpp" />
+    <ClCompile Include="transactiontablemodel.cpp" />
+    <ClCompile Include="transactionview.cpp" />
+    <ClCompile Include="utilitydialog.cpp" />
+    <ClCompile Include="walletframe.cpp" />
+    <ClCompile Include="walletmodel.cpp" />
+    <ClCompile Include="walletmodeltransaction.cpp" />
+    <ClCompile Include="walletview.cpp" />
+    <ClCompile Include="winshutdownmonitor.cpp" />
+    <QtMoc Include="rpcconsole.cpp">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">input</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">input</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+      <InputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">rpcconsole.cpp</InputFile>
+      <InputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rpcconsole.cpp</InputFile>
+      <InputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">rpcconsole.cpp</InputFile>
+      <InputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rpcconsole.cpp</InputFile>
+    </QtMoc>
+    <QtMoc Include="overviewpage.cpp">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">input</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">input</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+      <InputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">overviewpage.cpp</InputFile>
+      <InputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">overviewpage.cpp</InputFile>
+      <InputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">overviewpage.cpp</InputFile>
+      <InputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">overviewpage.cpp</InputFile>
+    </QtMoc>
+    <QtMoc Include="intro.cpp">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">input</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">input</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+      <InputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">intro.cpp</InputFile>
+      <InputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">intro.cpp</InputFile>
+      <InputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">intro.cpp</InputFile>
+      <InputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">intro.cpp</InputFile>
+    </QtMoc>
+    <QtMoc Include="bitcoinamountfield.cpp">
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">input</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">input</DynamicSource>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB</Define>
+      <InputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bitcoinamountfield.cpp</InputFile>
+      <InputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bitcoinamountfield.cpp</InputFile>
+      <InputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bitcoinamountfield.cpp</InputFile>
+      <InputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bitcoinamountfield.cpp</InputFile>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="bitcoin.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="addressbookpage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="addresstablemodel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="askpassphrasedialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="bantablemodel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="bitcoinaddressvalidator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="bitcoinamountfield.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="bitcoingui.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="bitcoinunits.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="clientmodel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="coincontroldialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="coincontroltreewidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="csvmodelwriter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="editaddressdialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="guiconstants.h" />
+    <ClInclude Include="networkstyle.h" />
+    <ClInclude Include="paymentrequest.pb.h" />
+    <ClInclude Include="paymentrequestplus.h" />
+    <ClInclude Include="platformstyle.h" />
+    <ClInclude Include="transactionrecord.h" />
+    <ClInclude Include="walletmodeltransaction.h" />
+    <QtMoc Include="walletview.h" />
+    <QtMoc Include="walletmodel.h" />
+    <QtMoc Include="walletframe.h" />
+    <QtMoc Include="utilitydialog.h" />
+    <QtMoc Include="transactionview.h" />
+    <QtMoc Include="transactiontablemodel.h" />
+    <QtMoc Include="transactionfilterproxy.h" />
+    <QtMoc Include="transactiondescdialog.h" />
+    <QtMoc Include="transactiondesc.h" />
+    <QtMoc Include="trafficgraphwidget.h" />
+    <QtMoc Include="splashscreen.h" />
+    <QtMoc Include="signverifymessagedialog.h" />
+    <QtMoc Include="sendcoinsentry.h" />
+    <QtMoc Include="sendcoinsdialog.h" />
+    <QtMoc Include="rpcconsole.h" />
+    <QtMoc Include="recentrequeststablemodel.h" />
+    <QtMoc Include="receiverequestdialog.h" />
+    <QtMoc Include="receivecoinsdialog.h" />
+    <QtMoc Include="qvaluecombobox.h" />
+    <QtMoc Include="qvalidatedlineedit.h" />
+    <QtMoc Include="peertablemodel.h" />
+    <QtMoc Include="paymentserver.h" />
+    <QtMoc Include="overviewpage.h" />
+    <QtMoc Include="optionsmodel.h" />
+    <QtMoc Include="optionsdialog.h" />
+    <QtMoc Include="openuridialog.h" />
+    <QtMoc Include="notificator.h" />
+    <QtMoc Include="modaloverlay.h" />
+    <QtMoc Include="macnotificationhandler.h" />
+    <QtMoc Include="macdockiconhandler.h" />
+    <QtMoc Include="intro.h" />
+    <QtMoc Include="guiutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="forms\addressbookpage.ui" />
+    <QtUic Include="forms\askpassphrasedialog.ui" />
+    <QtUic Include="forms\coincontroldialog.ui" />
+    <QtUic Include="forms\debugwindow.ui" />
+    <QtUic Include="forms\editaddressdialog.ui" />
+    <QtUic Include="forms\helpmessagedialog.ui" />
+    <QtUic Include="forms\intro.ui" />
+    <QtUic Include="forms\modaloverlay.ui" />
+    <QtUic Include="forms\openuridialog.ui" />
+    <QtUic Include="forms\optionsdialog.ui" />
+    <QtUic Include="forms\overviewpage.ui" />
+    <QtUic Include="forms\receivecoinsdialog.ui" />
+    <QtUic Include="forms\receiverequestdialog.ui" />
+    <QtUic Include="forms\sendcoinsdialog.ui" />
+    <QtUic Include="forms\sendcoinsentry.ui" />
+    <QtUic Include="forms\signverifymessagedialog.ui" />
+    <QtUic Include="forms\transactiondescdialog.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\_bitcoin_common.vcxproj">
+      <Project>{8effd767-7623-4556-9a30-36533462915e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\..\packages\boost.1.63.0.0\build\native\boost.targets" Condition="Exists('..\..\packages\boost.1.63.0.0\build\native\boost.targets')" />
+    <Import Project="..\..\packages\boost_atomic-vc140.1.63.0.0\build\native\boost_atomic-vc140.targets" Condition="Exists('..\..\packages\boost_atomic-vc140.1.63.0.0\build\native\boost_atomic-vc140.targets')" />
+    <Import Project="..\..\packages\boost_bzip2-vc140.1.63.0.0\build\native\boost_bzip2-vc140.targets" Condition="Exists('..\..\packages\boost_bzip2-vc140.1.63.0.0\build\native\boost_bzip2-vc140.targets')" />
+    <Import Project="..\..\packages\boost_chrono-vc140.1.63.0.0\build\native\boost_chrono-vc140.targets" Condition="Exists('..\..\packages\boost_chrono-vc140.1.63.0.0\build\native\boost_chrono-vc140.targets')" />
+    <Import Project="..\..\packages\boost_container-vc140.1.63.0.0\build\native\boost_container-vc140.targets" Condition="Exists('..\..\packages\boost_container-vc140.1.63.0.0\build\native\boost_container-vc140.targets')" />
+    <Import Project="..\..\packages\boost_context-vc140.1.63.0.0\build\native\boost_context-vc140.targets" Condition="Exists('..\..\packages\boost_context-vc140.1.63.0.0\build\native\boost_context-vc140.targets')" />
+    <Import Project="..\..\packages\boost_coroutine-vc140.1.63.0.0\build\native\boost_coroutine-vc140.targets" Condition="Exists('..\..\packages\boost_coroutine-vc140.1.63.0.0\build\native\boost_coroutine-vc140.targets')" />
+    <Import Project="..\..\packages\boost_date_time-vc140.1.63.0.0\build\native\boost_date_time-vc140.targets" Condition="Exists('..\..\packages\boost_date_time-vc140.1.63.0.0\build\native\boost_date_time-vc140.targets')" />
+    <Import Project="..\..\packages\boost_exception-vc140.1.63.0.0\build\native\boost_exception-vc140.targets" Condition="Exists('..\..\packages\boost_exception-vc140.1.63.0.0\build\native\boost_exception-vc140.targets')" />
+    <Import Project="..\..\packages\boost_fiber-vc140.1.63.0.0\build\native\boost_fiber-vc140.targets" Condition="Exists('..\..\packages\boost_fiber-vc140.1.63.0.0\build\native\boost_fiber-vc140.targets')" />
+    <Import Project="..\..\packages\boost_filesystem-vc140.1.63.0.0\build\native\boost_filesystem-vc140.targets" Condition="Exists('..\..\packages\boost_filesystem-vc140.1.63.0.0\build\native\boost_filesystem-vc140.targets')" />
+    <Import Project="..\..\packages\boost_graph-vc140.1.63.0.0\build\native\boost_graph-vc140.targets" Condition="Exists('..\..\packages\boost_graph-vc140.1.63.0.0\build\native\boost_graph-vc140.targets')" />
+    <Import Project="..\..\packages\boost_iostreams-vc140.1.63.0.0\build\native\boost_iostreams-vc140.targets" Condition="Exists('..\..\packages\boost_iostreams-vc140.1.63.0.0\build\native\boost_iostreams-vc140.targets')" />
+    <Import Project="..\..\packages\boost_locale-vc140.1.63.0.0\build\native\boost_locale-vc140.targets" Condition="Exists('..\..\packages\boost_locale-vc140.1.63.0.0\build\native\boost_locale-vc140.targets')" />
+    <Import Project="..\..\packages\boost_log-vc140.1.63.0.0\build\native\boost_log-vc140.targets" Condition="Exists('..\..\packages\boost_log-vc140.1.63.0.0\build\native\boost_log-vc140.targets')" />
+    <Import Project="..\..\packages\boost_log_setup-vc140.1.63.0.0\build\native\boost_log_setup-vc140.targets" Condition="Exists('..\..\packages\boost_log_setup-vc140.1.63.0.0\build\native\boost_log_setup-vc140.targets')" />
+    <Import Project="..\..\packages\boost_math_c99-vc140.1.63.0.0\build\native\boost_math_c99-vc140.targets" Condition="Exists('..\..\packages\boost_math_c99-vc140.1.63.0.0\build\native\boost_math_c99-vc140.targets')" />
+    <Import Project="..\..\packages\boost_math_c99f-vc140.1.63.0.0\build\native\boost_math_c99f-vc140.targets" Condition="Exists('..\..\packages\boost_math_c99f-vc140.1.63.0.0\build\native\boost_math_c99f-vc140.targets')" />
+    <Import Project="..\..\packages\boost_math_c99l-vc140.1.63.0.0\build\native\boost_math_c99l-vc140.targets" Condition="Exists('..\..\packages\boost_math_c99l-vc140.1.63.0.0\build\native\boost_math_c99l-vc140.targets')" />
+    <Import Project="..\..\packages\boost_math_tr1-vc140.1.63.0.0\build\native\boost_math_tr1-vc140.targets" Condition="Exists('..\..\packages\boost_math_tr1-vc140.1.63.0.0\build\native\boost_math_tr1-vc140.targets')" />
+    <Import Project="..\..\packages\boost_math_tr1f-vc140.1.63.0.0\build\native\boost_math_tr1f-vc140.targets" Condition="Exists('..\..\packages\boost_math_tr1f-vc140.1.63.0.0\build\native\boost_math_tr1f-vc140.targets')" />
+    <Import Project="..\..\packages\boost_math_tr1l-vc140.1.63.0.0\build\native\boost_math_tr1l-vc140.targets" Condition="Exists('..\..\packages\boost_math_tr1l-vc140.1.63.0.0\build\native\boost_math_tr1l-vc140.targets')" />
+    <Import Project="..\..\packages\boost_prg_exec_monitor-vc140.1.63.0.0\build\native\boost_prg_exec_monitor-vc140.targets" Condition="Exists('..\..\packages\boost_prg_exec_monitor-vc140.1.63.0.0\build\native\boost_prg_exec_monitor-vc140.targets')" />
+    <Import Project="..\..\packages\boost_program_options-vc140.1.63.0.0\build\native\boost_program_options-vc140.targets" Condition="Exists('..\..\packages\boost_program_options-vc140.1.63.0.0\build\native\boost_program_options-vc140.targets')" />
+    <Import Project="..\..\packages\boost_python-vc140.1.63.0.0\build\native\boost_python-vc140.targets" Condition="Exists('..\..\packages\boost_python-vc140.1.63.0.0\build\native\boost_python-vc140.targets')" />
+    <Import Project="..\..\packages\boost_random-vc140.1.63.0.0\build\native\boost_random-vc140.targets" Condition="Exists('..\..\packages\boost_random-vc140.1.63.0.0\build\native\boost_random-vc140.targets')" />
+    <Import Project="..\..\packages\boost_regex-vc140.1.63.0.0\build\native\boost_regex-vc140.targets" Condition="Exists('..\..\packages\boost_regex-vc140.1.63.0.0\build\native\boost_regex-vc140.targets')" />
+    <Import Project="..\..\packages\boost_serialization-vc140.1.63.0.0\build\native\boost_serialization-vc140.targets" Condition="Exists('..\..\packages\boost_serialization-vc140.1.63.0.0\build\native\boost_serialization-vc140.targets')" />
+    <Import Project="..\..\packages\boost_signals-vc140.1.63.0.0\build\native\boost_signals-vc140.targets" Condition="Exists('..\..\packages\boost_signals-vc140.1.63.0.0\build\native\boost_signals-vc140.targets')" />
+    <Import Project="..\..\packages\boost_system-vc140.1.63.0.0\build\native\boost_system-vc140.targets" Condition="Exists('..\..\packages\boost_system-vc140.1.63.0.0\build\native\boost_system-vc140.targets')" />
+    <Import Project="..\..\packages\boost_test_exec_monitor-vc140.1.63.0.0\build\native\boost_test_exec_monitor-vc140.targets" Condition="Exists('..\..\packages\boost_test_exec_monitor-vc140.1.63.0.0\build\native\boost_test_exec_monitor-vc140.targets')" />
+    <Import Project="..\..\packages\boost_thread-vc140.1.63.0.0\build\native\boost_thread-vc140.targets" Condition="Exists('..\..\packages\boost_thread-vc140.1.63.0.0\build\native\boost_thread-vc140.targets')" />
+    <Import Project="..\..\packages\boost_timer-vc140.1.63.0.0\build\native\boost_timer-vc140.targets" Condition="Exists('..\..\packages\boost_timer-vc140.1.63.0.0\build\native\boost_timer-vc140.targets')" />
+    <Import Project="..\..\packages\boost_type_erasure-vc140.1.63.0.0\build\native\boost_type_erasure-vc140.targets" Condition="Exists('..\..\packages\boost_type_erasure-vc140.1.63.0.0\build\native\boost_type_erasure-vc140.targets')" />
+    <Import Project="..\..\packages\boost_unit_test_framework-vc140.1.63.0.0\build\native\boost_unit_test_framework-vc140.targets" Condition="Exists('..\..\packages\boost_unit_test_framework-vc140.1.63.0.0\build\native\boost_unit_test_framework-vc140.targets')" />
+    <Import Project="..\..\packages\boost_wave-vc140.1.63.0.0\build\native\boost_wave-vc140.targets" Condition="Exists('..\..\packages\boost_wave-vc140.1.63.0.0\build\native\boost_wave-vc140.targets')" />
+    <Import Project="..\..\packages\boost_wserialization-vc140.1.63.0.0\build\native\boost_wserialization-vc140.targets" Condition="Exists('..\..\packages\boost_wserialization-vc140.1.63.0.0\build\native\boost_wserialization-vc140.targets')" />
+    <Import Project="..\..\packages\boost_zlib-vc140.1.63.0.0\build\native\boost_zlib-vc140.targets" Condition="Exists('..\..\packages\boost_zlib-vc140.1.63.0.0\build\native\boost_zlib-vc140.targets')" />
+    <Import Project="..\..\packages\boost-vc140.1.63.0.0\build\native\boost-vc140.targets" Condition="Exists('..\..\packages\boost-vc140.1.63.0.0\build\native\boost-vc140.targets')" />
+    <Import Project="..\..\packages\leveldb-vc140.1.16.0.5\build\native\leveldb-vc140.targets" Condition="Exists('..\..\packages\leveldb-vc140.1.16.0.5\build\native\leveldb-vc140.targets')" />
+    <Import Project="..\..\packages\libevent2-vc140.2.1.8\build\native\libevent2-vc140.targets" Condition="Exists('..\..\packages\libevent2-vc140.2.1.8\build\native\libevent2-vc140.targets')" />
+    <Import Project="..\..\packages\zlib.v120.windesktop.msvcstl.dyn.rt-dyn.1.2.8.8\build\native\zlib.v120.windesktop.msvcstl.dyn.rt-dyn.targets" Condition="Exists('..\..\packages\zlib.v120.windesktop.msvcstl.dyn.rt-dyn.1.2.8.8\build\native\zlib.v120.windesktop.msvcstl.dyn.rt-dyn.targets')" />
+    <Import Project="..\..\packages\zlib.v140.windesktop.msvcstl.dyn.rt-dyn.1.2.8.8\build\native\zlib.v140.windesktop.msvcstl.dyn.rt-dyn.targets" Condition="Exists('..\..\packages\zlib.v140.windesktop.msvcstl.dyn.rt-dyn.1.2.8.8\build\native\zlib.v140.windesktop.msvcstl.dyn.rt-dyn.targets')" />
+    <Import Project="..\..\packages\miniupnpc-vc140.2.0.0.1\build\native\miniupnpc-vc140.targets" Condition="Exists('..\..\packages\miniupnpc-vc140.2.0.0.1\build\native\miniupnpc-vc140.targets')" />
+    <Import Project="..\..\packages\openssl-vc141.1.1.0\build\native\openssl-vc141.targets" Condition="Exists('..\..\packages\openssl-vc141.1.1.0\build\native\openssl-vc141.targets')" />
+    <Import Project="..\..\packages\secp256k1-vc141.0.1.0.15\build\native\secp256k1-vc141.targets" Condition="Exists('..\..\packages\secp256k1-vc141.0.1.0.15\build\native\secp256k1-vc141.targets')" />
+    <Import Project="..\..\packages\libzmq-vc141.4.2.2\build\native\libzmq-vc141.targets" Condition="Exists('..\..\packages\libzmq-vc141.4.2.2\build\native\libzmq-vc141.targets')" />
+    <Import Project="..\..\packages\berkeley.db.v140.5.3.28.3\build\native\berkeley.db.v140.targets" Condition="Exists('..\..\packages\berkeley.db.v140.5.3.28.3\build\native\berkeley.db.v140.targets')" />
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="winrt_x86_msvc2017" Qt5Version_x0020_x64="msvc2017_64" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,5 @@
+﻿D:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(944,5): warning MSB8027: 名为 crypto_tests.cpp 的两个或更多文件将生成到同一位置的输出。这会导致错误的生成结果。   调用的文件是 ..\src\test\crypto_tests.cpp, ..\src\wallet\test\crypto_tests.cpp。
+Debug\crypto_tests.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+MSVCRTD.lib(initializers.obj) : warning LNK4098: 默认库“libcmtd.lib”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+  test_bitcoin.vcxproj -> D:\2.code\bitcoin-abc\Debug\test_bitcoin.exe
