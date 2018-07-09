@@ -74,9 +74,6 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(frame2->sizePolicy().hasHeightForWidth());
         frame2->setSizePolicy(sizePolicy);
-        frame2->setStyleSheet(QLatin1String("QFrame{\n"
-"background-color:#191F29;\n"
-"}"));
         frame2->setFrameShape(QFrame::StyledPanel);
         frame2->setFrameShadow(QFrame::Sunken);
         verticalLayout_3 = new QVBoxLayout(frame2);
@@ -183,9 +180,6 @@ public:
         frame->setObjectName(QStringLiteral("frame"));
         sizePolicy.setHeightForWidth(frame->sizePolicy().hasHeightForWidth());
         frame->setSizePolicy(sizePolicy);
-        frame->setStyleSheet(QLatin1String("QFrame{\n"
-"background-color:#191F29;\n"
-"}"));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
         verticalLayout_2 = new QVBoxLayout(frame);

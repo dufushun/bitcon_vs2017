@@ -1,200 +1,143 @@
-﻿  Moc'ing bitcoin.cpp...
+﻿  Moc'ing addressbookpage.h...
+  Moc'ing addresstablemodel.h...
+  Moc'ing askpassphrasedialog.h...
+  Moc'ing bantablemodel.h...
+  Moc'ing bitcoinaddressvalidator.h...
+  Moc'ing bitcoinamountfield.h...
+  Moc'ing bitcoingui.h...
+  Moc'ing bitcoinunits.h...
+  Moc'ing clientmodel.h...
+  Moc'ing coincontroldialog.h...
+  Moc'ing coincontroltreewidget.h...
+  Moc'ing csvmodelwriter.h...
+  Moc'ing editaddressdialog.h...
+  Moc'ing walletview.h...
+  Moc'ing walletmodel.h...
+  Moc'ing walletframe.h...
+  Moc'ing utilitydialog.h...
+  Moc'ing transactionview.h...
+  Moc'ing transactiontablemodel.h...
+  Moc'ing transactionfilterproxy.h...
+  Moc'ing transactiondescdialog.h...
+  Moc'ing transactiondesc.h...
+  Moc'ing trafficgraphwidget.h...
+  Moc'ing splashscreen.h...
+  Moc'ing signverifymessagedialog.h...
+  Moc'ing sendcoinsentry.h...
+  Moc'ing sendcoinsdialog.h...
+  Moc'ing rpcconsole.h...
+  Moc'ing recentrequeststablemodel.h...
+  Moc'ing receiverequestdialog.h...
+  Moc'ing receivecoinsdialog.h...
+  Moc'ing qvaluecombobox.h...
+  Moc'ing qvalidatedlineedit.h...
+  Moc'ing peertablemodel.h...
+  Moc'ing paymentserver.h...
+  Moc'ing overviewpage.h...
+  Moc'ing optionsmodel.h...
+  Moc'ing optionsdialog.h...
+  Moc'ing openuridialog.h...
+  Moc'ing notificator.h...
+  Moc'ing modaloverlay.h...
+  Moc'ing macnotificationhandler.h...
+  Moc'ing macdockiconhandler.h...
+  Moc'ing intro.h...
+  Moc'ing guiutil.h...
+  addressbookpage.cpp
+  addresstablemodel.cpp
+  askpassphrasedialog.cpp
+  bantablemodel.cpp
+  bitcoinaddressvalidator.cpp
+  bitcoingui.cpp
+  bitcoinstrings.cpp
+  bitcoinunits.cpp
+  clientmodel.cpp
+  coincontroldialog.cpp
+  coincontroltreewidget.cpp
+  csvmodelwriter.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  editaddressdialog.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  guiutil.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 askpassphrasedialog.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 askpassphrasedialog.cpp)
+  modaloverlay.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 askpassphrasedialog.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+d:\2.code\bitcoin-abc\src\coins.h(42): warning C4805: “|”: 在操作中将类型“uint32_t”与类型“bool”混合不安全 (编译源文件 coincontroldialog.cpp)
+  networkstyle.cpp
+  notificator.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 addresstablemodel.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 addresstablemodel.cpp)
+  openuridialog.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 addresstablemodel.cpp)
+  optionsdialog.cpp
+  Unknown compiler version - please run the configure tests and report the results
   optionsmodel.cpp
+  paymentrequest.pb.cc
   paymentrequestplus.cpp
-  paymentserver.cpp
-  winshutdownmonitor.cpp
-  bitcoin.cpp
-d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 paymentserver.cpp)
-d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 paymentserver.cpp)
 d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 paymentrequestplus.cpp)
 d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 paymentrequestplus.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+d:\2.code\bitcoin-abc\src\coins.h(42): warning C4805: “|”: 在操作中将类型“uint32_t”与类型“bool”混合不安全 (编译源文件 clientmodel.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 bitcoingui.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 bitcoingui.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 guiutil.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 guiutil.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 coincontroldialog.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 coincontroldialog.cpp)
 d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 paymentrequestplus.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 bitcoingui.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 guiutil.cpp)
+  paymentserver.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 paymentserver.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 paymentserver.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 coincontroldialog.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 openuridialog.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 openuridialog.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+  peertablemodel.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 openuridialog.cpp)
 d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 paymentserver.cpp)
   Unknown compiler version - please run the configure tests and report the results
+  platformstyle.cpp
+d:\2.code\bitcoin-abc\src\coins.h(42): warning C4805: “|”: 在操作中将类型“uint32_t”与类型“bool”混合不安全 (编译源文件 optionsdialog.cpp)
   Unknown compiler version - please run the configure tests and report the results
-  Unknown compiler version - please run the configure tests and report the results
-d:\windows kits\10\include\10.0.10586.0\shared\ws2def.h(103): warning C4005: “AF_IPX”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(457): note: 参见“AF_IPX”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2def.h(136): warning C4005: “AF_MAX”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(476): note: 参见“AF_MAX”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2def.h(185): warning C4005: “SO_DONTLINGER”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(399): note: 参见“SO_DONTLINGER”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2def.h(235): error C2011: “sockaddr”:“struct”类型重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(1007): note: 参见“sockaddr”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2def.h(437): error C2059: 语法错误:“常数” (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2def.h(437): error C3805: “常数”: 意外标记，应输入“}”或者“,” (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2def.h(572): warning C4005: “IN_CLASSA”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(284): note: 参见“IN_CLASSA”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2def.h(578): warning C4005: “IN_CLASSB”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(290): note: 参见“IN_CLASSB”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2def.h(584): warning C4005: “IN_CLASSC”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(296): note: 参见“IN_CLASSC”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2def.h(595): warning C4005: “INADDR_ANY”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(301): note: 参见“INADDR_ANY”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2def.h(597): warning C4005: “INADDR_BROADCAST”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(303): note: 参见“INADDR_BROADCAST”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2def.h(633): error C2011: “sockaddr_in”:“struct”类型重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(1011): note: 参见“sockaddr_in”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(136): error C2011: “fd_set”:“struct”类型重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(1019): note: 参见“fd_set”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(156): warning C4005: “FD_CLR”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(94): note: 参见“FD_CLR”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(171): warning C4005: “FD_SET”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(99): note: 参见“FD_SET”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(180): error C2011: “timeval”:“struct”类型重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(1035): note: 参见“timeval”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(236): error C2011: “hostent”:“struct”类型重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(1023): note: 参见“hostent”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(249): error C2011: “netent”:“struct”类型重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(177): note: 参见“netent”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(256): error C2011: “servent”:“struct”类型重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(1027): note: 参见“servent”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(268): error C2011: “protoent”:“struct”类型重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(1031): note: 参见“protoent”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(364): error C2011: “WSAData”:“struct”类型重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(319): note: 参见“WSAData”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(462): error C2011: “sockproto”:“struct”类型重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(491): note: 参见“sockproto”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(504): error C2011: “linger”:“struct”类型重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(1015): note: 参见“linger”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(517): warning C4005: “SOMAXCONN”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(541): note: 参见“SOMAXCONN”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(551): warning C4005: “FD_READ”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(559): note: 参见“FD_READ”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(554): warning C4005: “FD_WRITE”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(560): note: 参见“FD_WRITE”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(557): warning C4005: “FD_OOB”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(561): note: 参见“FD_OOB”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(560): warning C4005: “FD_ACCEPT”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(562): note: 参见“FD_ACCEPT”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(563): warning C4005: “FD_CONNECT”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(563): note: 参见“FD_CONNECT”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(566): warning C4005: “FD_CLOSE”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(564): note: 参见“FD_CLOSE”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(1622): error C2375: “accept”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(739): note: 参见“accept”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(1644): error C2375: “bind”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(744): note: 参见“bind”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(1665): error C2375: “closesocket”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(749): note: 参见“closesocket”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(1682): error C2375: “connect”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(751): note: 参见“connect”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(1703): error C2375: “ioctlsocket”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(756): note: 参见“ioctlsocket”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(1724): error C2375: “getpeername”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(761): note: 参见“getpeername”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(1745): error C2375: “getsockname”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(766): note: 参见“getsockname”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(1766): error C2375: “getsockopt”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(771): note: 参见“getsockopt”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(1791): error C2375: “htonl”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(778): note: 参见“htonl”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(1808): error C2375: “htons”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(780): note: 参见“htons”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(1826): error C2375: “inet_addr”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(782): note: 参见“inet_addr”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(1844): error C2375: “inet_ntoa”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(784): note: 参见“inet_ntoa”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(1944): error C2375: “listen”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(786): note: 参见“listen”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(1963): error C2375: “ntohl”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(790): note: 参见“ntohl”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(1980): error C2375: “ntohs”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(792): note: 参见“ntohs”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(1997): error C2375: “recv”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(794): note: 参见“recv”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2020): error C2375: “recvfrom”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(800): note: 参见“recvfrom”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2047): error C2375: “select”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(808): note: 参见“select”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2072): error C2375: “send”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(815): note: 参见“send”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2095): error C2375: “sendto”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(821): note: 参见“sendto”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2122): error C2375: “setsockopt”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(829): note: 参见“setsockopt”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2147): error C2375: “shutdown”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(836): note: 参见“shutdown”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2167): error C2375: “socket”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(840): note: 参见“socket”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2192): error C2375: “gethostbyaddr”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(847): note: 参见“gethostbyaddr”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2214): error C2375: “gethostbyname”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(852): note: 参见“gethostbyname”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2231): error C2375: “gethostname”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(854): note: 参见“gethostname”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2271): error C2375: “getservbyport”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(858): note: 参见“getservbyport”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2290): error C2375: “getservbyname”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(862): note: 参见“getservbyname”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2309): error C2375: “getprotobynumber”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(866): note: 参见“getprotobynumber”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2326): error C2375: “getprotobyname”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(868): note: 参见“getprotobyname”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2346): error C2375: “WSAStartup”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(872): note: 参见“WSAStartup”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2366): error C2375: “WSACleanup”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(876): note: 参见“WSACleanup”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2383): error C2375: “WSASetLastError”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(878): note: 参见“WSASetLastError”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2400): error C2375: “WSAGetLastError”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(880): note: 参见“WSAGetLastError”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2421): error C2375: “WSAIsBlocking”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(882): note: 参见“WSAIsBlocking”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2439): error C2375: “WSAUnhookBlockingHook”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(884): note: 参见“WSAUnhookBlockingHook”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2457): error C2375: “WSASetBlockingHook”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(886): note: 参见“WSASetBlockingHook”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2475): error C2375: “WSACancelBlockingCall”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(888): note: 参见“WSACancelBlockingCall”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2493): error C2375: “WSAAsyncGetServByName”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(890): note: 参见“WSAAsyncGetServByName”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2521): error C2375: “WSAAsyncGetServByPort”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(898): note: 参见“WSAAsyncGetServByPort”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2549): error C2375: “WSAAsyncGetProtoByName”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(906): note: 参见“WSAAsyncGetProtoByName”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2575): error C2375: “WSAAsyncGetProtoByNumber”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(913): note: 参见“WSAAsyncGetProtoByNumber”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2601): error C2375: “WSAAsyncGetHostByName”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(920): note: 参见“WSAAsyncGetHostByName”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2627): error C2375: “WSAAsyncGetHostByAddr”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(927): note: 参见“WSAAsyncGetHostByAddr”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2657): error C2375: “WSACancelAsyncRequest”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(936): note: 参见“WSACancelAsyncRequest”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\winsock2.h(2675): error C2375: “WSAAsyncSelect”: 重定义；不同的链接 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(938): note: 参见“WSAAsyncSelect”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\um\mswsock.h(151): error C2011: “_TRANSMIT_FILE_BUFFERS”:“struct”类型重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(950): note: 参见“_TRANSMIT_FILE_BUFFERS”的声明 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2ipdef.h(80): error C2079: “sockaddr_gen::Address”使用未定义的 struct“sockaddr” (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2ipdef.h(81): error C2079: “sockaddr_gen::AddressIn”使用未定义的 struct“sockaddr_in” (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2ipdef.h(124): warning C4005: “IP_TOS”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(349): note: 参见“IP_TOS”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2ipdef.h(125): warning C4005: “IP_TTL”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(348): note: 参见“IP_TTL”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2ipdef.h(126): warning C4005: “IP_MULTICAST_IF”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(343): note: 参见“IP_MULTICAST_IF”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2ipdef.h(127): warning C4005: “IP_MULTICAST_TTL”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(344): note: 参见“IP_MULTICAST_TTL”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2ipdef.h(128): warning C4005: “IP_MULTICAST_LOOP”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(345): note: 参见“IP_MULTICAST_LOOP”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2ipdef.h(129): warning C4005: “IP_ADD_MEMBERSHIP”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(346): note: 参见“IP_ADD_MEMBERSHIP”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2ipdef.h(130): warning C4005: “IP_DROP_MEMBERSHIP”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(347): note: 参见“IP_DROP_MEMBERSHIP”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2ipdef.h(131): warning C4005: “IP_DONTFRAGMENT”: 宏重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(350): note: 参见“IP_DONTFRAGMENT”的前一个定义 (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2ipdef.h(205): error C2079: “_SOCKADDR_INET::Ipv4”使用未定义的 struct“sockaddr_in” (编译源文件 winshutdownmonitor.cpp)
-d:\windows kits\10\include\10.0.10586.0\shared\ws2ipdef.h(721): error C2011: “ip_mreq”:“struct”类型重定义 (编译源文件 winshutdownmonitor.cpp)
-  d:\windows kits\10\include\10.0.10586.0\um\winsock.h(360): note: 参见“ip_mreq”的声明 (编译源文件 winshutdownmonitor.cpp)
-  Unknown compiler version - please run the configure tests and report the results
-  Unknown compiler version - please run the configure tests and report the results
-d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 D:\2.code\bitcoin-abc\src\qt\bitcoin.cpp)
-d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 D:\2.code\bitcoin-abc\src\qt\bitcoin.cpp)
-d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 D:\2.code\bitcoin-abc\src\qt\bitcoin.cpp)
+  qvalidatedlineedit.cpp
+  qvaluecombobox.cpp
+d:\2.code\bitcoin-abc\src\coins.h(42): warning C4805: “|”: 在操作中将类型“uint32_t”与类型“bool”混合不安全 (编译源文件 optionsmodel.cpp)
+d:\qt\qt5.9.6\5.9.6\winrt_x86_msvc2017\include\qtnetwork\qtnetwork-config.h(11): warning C4005: “QT_NO_NETWORKPROXY”: 宏重定义 (编译源文件 paymentrequestplus.cpp)
+  d:\qt\qt5.9.6\5.9.6\winrt_x86_msvc2017\include\qtnetwork\qtnetwork-config.h(11): note: 命令行参数: 参见前面的“QT_NO_NETWORKPROXY”定义 (编译源文件 paymentrequestplus.cpp)
 d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.cpp(176): error C2079: “_ctx”使用未定义的 struct“evp_md_ctx_st”
 d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.cpp(178): error C2440: “=”: 无法从“int *”转换为“EVP_MD_CTX *”
   d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.cpp(178): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
-d:\2.code\bitcoin-abc\src\coins.h(42): warning C4805: “|”: 在操作中将类型“uint32_t”与类型“bool”混合不安全 (编译源文件 optionsmodel.cpp)
+  receivecoinsdialog.cpp
+  receiverequestdialog.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  recentrequeststablemodel.cpp
+  sendcoinsdialog.cpp
+  sendcoinsentry.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 receiverequestdialog.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 receiverequestdialog.cpp)
+  signverifymessagedialog.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 receiverequestdialog.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+  splashscreen.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 sendcoinsdialog.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 sendcoinsdialog.cpp)
+d:\qt\qt5.9.6\5.9.6\winrt_x86_msvc2017\include\qtnetwork\qtnetwork-config.h(11): warning C4005: “QT_NO_NETWORKPROXY”: 宏重定义 (编译源文件 optionsmodel.cpp)
+  d:\qt\qt5.9.6\5.9.6\winrt_x86_msvc2017\include\qtnetwork\qtnetwork-config.h(11): note: 命令行参数: 参见前面的“QT_NO_NETWORKPROXY”定义 (编译源文件 optionsmodel.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 recentrequeststablemodel.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 recentrequeststablemodel.cpp)
 d:\2.code\bitcoin-abc\src\qt\optionsmodel.cpp(489): error C2027: 使用了未定义类型“QNetworkProxy”
   d:\2.code\bitcoin-abc\src\qt\optionsmodel.h(13): note: 参见“QNetworkProxy”的声明
 d:\2.code\bitcoin-abc\src\qt\optionsmodel.cpp(489): error C2228: “.setType”的左边必须有类/结构/联合
@@ -209,6 +152,23 @@ d:\2.code\bitcoin-abc\src\qt\optionsmodel.cpp(495): error C2027: 使用了未定
   d:\2.code\bitcoin-abc\src\qt\optionsmodel.h(13): note: 参见“QNetworkProxy”的声明
 d:\2.code\bitcoin-abc\src\qt\optionsmodel.cpp(495): error C2228: “.setType”的左边必须有类/结构/联合
 d:\2.code\bitcoin-abc\src\qt\optionsmodel.cpp(495): error C2065: “NoProxy”: 未声明的标识符
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 sendcoinsentry.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 sendcoinsentry.cpp)
+  trafficgraphwidget.cpp
+d:\2.code\bitcoin-abc\src\coins.h(42): warning C4805: “|”: 在操作中将类型“uint32_t”与类型“bool”混合不安全 (编译源文件 peertablemodel.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 sendcoinsdialog.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 recentrequeststablemodel.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 sendcoinsentry.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+  transactiondesc.cpp
+  Unknown compiler version - please run the configure tests and report the results
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 receivecoinsdialog.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 receivecoinsdialog.cpp)
+d:\qt\qt5.9.6\5.9.6\winrt_x86_msvc2017\include\qtnetwork\qtnetwork-config.h(11): warning C4005: “QT_NO_NETWORKPROXY”: 宏重定义 (编译源文件 paymentserver.cpp)
+  d:\qt\qt5.9.6\5.9.6\winrt_x86_msvc2017\include\qtnetwork\qtnetwork-config.h(11): note: 命令行参数: 参见前面的“QT_NO_NETWORKPROXY”定义 (编译源文件 paymentserver.cpp)
+  Unknown compiler version - please run the configure tests and report the results
 d:\2.code\bitcoin-abc\src\qt\paymentserver.cpp(414): error C2079: “proxy”使用未定义的 class“QNetworkProxy”
 d:\2.code\bitcoin-abc\src\qt\paymentserver.cpp(417): error C2664: “bool OptionsModel::getProxySettings(QNetworkProxy &) const”: 无法将参数 1 从“int”转换为“QNetworkProxy &”
 d:\2.code\bitcoin-abc\src\qt\paymentserver.cpp(418): error C2039: “setProxy”: 不是“QNetworkAccessManager”的成员
@@ -217,3 +177,148 @@ d:\2.code\bitcoin-abc\src\qt\paymentserver.cpp(420): error C2228: “.hostName�
   d:\2.code\bitcoin-abc\src\qt\paymentserver.cpp(420): note: 类型是“int”
 d:\2.code\bitcoin-abc\src\qt\paymentserver.cpp(420): error C2228: “.port”的左边必须有类/结构/联合
   d:\2.code\bitcoin-abc\src\qt\paymentserver.cpp(420): note: 类型是“int”
+  transactiondescdialog.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 receivecoinsdialog.cpp)
+  transactionfilterproxy.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  transactionrecord.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 signverifymessagedialog.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 signverifymessagedialog.cpp)
+d:\2.code\bitcoin-abc\src\coins.h(42): warning C4805: “|”: 在操作中将类型“uint32_t”与类型“bool”混合不安全 (编译源文件 sendcoinsdialog.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 signverifymessagedialog.cpp)
+  transactiontablemodel.cpp
+  transactionview.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 transactiondesc.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 transactiondesc.cpp)
+  utilitydialog.cpp
+  Unknown compiler version - please run the configure tests and report the results
+d:\2.code\bitcoin-abc\src\coins.h(42): warning C4805: “|”: 在操作中将类型“uint32_t”与类型“bool”混合不安全 (编译源文件 signverifymessagedialog.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 transactiondesc.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+  walletframe.cpp
+  walletmodel.cpp
+  walletmodeltransaction.cpp
+  walletview.cpp
+d:\2.code\bitcoin-abc\src\coins.h(42): warning C4805: “|”: 在操作中将类型“uint32_t”与类型“bool”混合不安全 (编译源文件 transactionrecord.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 walletmodel.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 walletmodel.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 walletmodeltransaction.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 walletmodeltransaction.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 walletmodel.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 walletmodeltransaction.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 utilitydialog.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 utilitydialog.cpp)
+  winshutdownmonitor.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 transactiontablemodel.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 transactiontablemodel.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 transactionview.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 transactionview.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 utilitydialog.cpp)
+d:\2.code\bitcoin-abc\src\coins.h(42): warning C4805: “|”: 在操作中将类型“uint32_t”与类型“bool”混合不安全 (编译源文件 transactiondesc.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 transactiontablemodel.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 transactionview.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 walletview.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 walletview.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 walletview.cpp)
+d:\2.code\bitcoin-abc\src\coins.h(42): warning C4805: “|”: 在操作中将类型“uint32_t”与类型“bool”混合不安全 (编译源文件 transactiontablemodel.cpp)
+  moc_addressbookpage.cpp
+d:\2.code\bitcoin-abc\src\coins.h(42): warning C4805: “|”: 在操作中将类型“uint32_t”与类型“bool”混合不安全 (编译源文件 walletmodel.cpp)
+  moc_addresstablemodel.cpp
+  moc_askpassphrasedialog.cpp
+  moc_bantablemodel.cpp
+  moc_bitcoinaddressvalidator.cpp
+  moc_bitcoinamountfield.cpp
+  moc_bitcoingui.cpp
+  moc_bitcoinunits.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  moc_clientmodel.cpp
+  moc_coincontroldialog.cpp
+  moc_coincontroltreewidget.cpp
+  moc_csvmodelwriter.cpp
+  moc_editaddressdialog.cpp
+  moc_walletview.cpp
+  moc_walletmodel.cpp
+  moc_walletframe.cpp
+  moc_utilitydialog.cpp
+  moc_transactionview.cpp
+  moc_transactiontablemodel.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_walletmodel.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_walletmodel.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_walletmodel.cpp)
+  moc_transactionfilterproxy.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  moc_transactiondescdialog.cpp
+  moc_transactiondesc.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  moc_trafficgraphwidget.cpp
+  moc_splashscreen.cpp
+  moc_signverifymessagedialog.cpp
+  moc_sendcoinsentry.cpp
+  moc_sendcoinsdialog.cpp
+  moc_rpcconsole.cpp
+  moc_recentrequeststablemodel.cpp
+  moc_receiverequestdialog.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_sendcoinsentry.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_sendcoinsentry.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_sendcoinsentry.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+  moc_receivecoinsdialog.cpp
+  moc_qvaluecombobox.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  moc_qvalidatedlineedit.cpp
+  moc_peertablemodel.cpp
+  moc_paymentserver.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_paymentserver.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_paymentserver.cpp)
+  moc_overviewpage.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_sendcoinsdialog.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_sendcoinsdialog.cpp)
+  moc_optionsmodel.cpp
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_recentrequeststablemodel.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_recentrequeststablemodel.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_receiverequestdialog.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_receiverequestdialog.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_sendcoinsdialog.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_recentrequeststablemodel.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_receiverequestdialog.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 .\GeneratedFiles\Debug\moc_paymentserver.cpp)
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  moc_optionsdialog.cpp
+  moc_openuridialog.cpp
+  moc_notificator.cpp
+  moc_modaloverlay.cpp
+  moc_macnotificationhandler.cpp
+  moc_macdockiconhandler.cpp
+  moc_intro.cpp
+  moc_guiutil.cpp
+  bitcoin.cpp
+  rpcconsole.cpp
+d:\2.code\bitcoin-abc\src\qt\rpcconsole.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  overviewpage.cpp
+  intro.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  bitcoinamountfield.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  qrc_bitcoin.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+  Unknown compiler version - please run the configure tests and report the results
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 D:\2.code\bitcoin-abc\src\qt\bitcoin.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 D:\2.code\bitcoin-abc\src\qt\bitcoin.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 D:\2.code\bitcoin-abc\src\qt\bitcoin.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(8): warning C4068: 未知的杂注 (编译源文件 overviewpage.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(9): warning C4068: 未知的杂注 (编译源文件 overviewpage.cpp)
+d:\2.code\bitcoin-abc\src\qt\paymentrequestplus.h(11): warning C4068: 未知的杂注 (编译源文件 overviewpage.cpp)
+d:\qt\qt5.9.6\5.9.6\winrt_x86_msvc2017\include\qtnetwork\qtnetwork-config.h(11): warning C4005: “QT_NO_NETWORKPROXY”: 宏重定义 (编译源文件 D:\2.code\bitcoin-abc\src\qt\bitcoin.cpp)
+  d:\qt\qt5.9.6\5.9.6\winrt_x86_msvc2017\include\qtnetwork\qtnetwork-config.h(11): note: 命令行参数: 参见前面的“QT_NO_NETWORKPROXY”定义 (编译源文件 D:\2.code\bitcoin-abc\src\qt\bitcoin.cpp)

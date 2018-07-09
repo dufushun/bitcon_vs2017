@@ -95,7 +95,7 @@ BitcoinGUI::BitcoinGUI(const Config *cfg, const PlatformStyle *_platformStyle,
       aboutQtAction(0), openRPCConsoleAction(0), openAction(0),
       showHelpMessageAction(0), trayIcon(0), trayIconMenu(0), notificator(0),
       rpcConsole(0), helpMessageDialog(0), modalOverlay(0), prevBlocks(0),
-      spinnerFrame(0), platformStyle(_platformStyle), cfg(cfg) {
+      spinnerFrame(0), platformStyle(_platformStyle), cfg(cfg), m_pBarText(0) {
     GUIUtil::restoreWindowGeometry("nWindow", QSize(850, 550), this);
 
     QString windowTitle = tr(PACKAGE_NAME) + " - ";
@@ -163,6 +163,7 @@ BitcoinGUI::BitcoinGUI(const Config *cfg, const PlatformStyle *_platformStyle,
 
     // Status bar notification icons
     QFrame *frameBlocks = new QFrame();
+    frameBlocks->setStyleSheet("QFrame{background-color:#0E131A;}");
     frameBlocks->setContentsMargins(0, 0, 0, 0);
     frameBlocks->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
     QHBoxLayout *frameBlocksLayout = new QHBoxLayout(frameBlocks);
@@ -189,6 +190,8 @@ BitcoinGUI::BitcoinGUI(const Config *cfg, const PlatformStyle *_platformStyle,
     // Progress bar and label for blocks download
     progressBarLabel = new QLabel();
     progressBarLabel->setVisible(false);
+    progressBarLabel->setStyleSheet(
+        "QLabel{font-size: 12px;color:rgba(130,133,138,1);}");
     progressBar = new GUIUtil::ProgressBar();
     progressBar->setAlignment(Qt::AlignCenter);
     progressBar->setVisible(false);
@@ -197,18 +200,23 @@ BitcoinGUI::BitcoinGUI(const Config *cfg, const PlatformStyle *_platformStyle,
     // progress bar, as they make the text unreadable (workaround for issue
     // #1071)
     // See https://qt-project.org/doc/qt-4.8/gallery.html
-    QString curStyle = QApplication::style()->metaObject()->className();
-    if (curStyle == "QWindowsStyle" || curStyle == "QWindowsXPStyle") {
-        progressBar->setStyleSheet(
-            "QProgressBar { background-color: #e8e8e8; border: 1px solid grey; "
-            "border-radius: 7px; padding: 1px; text-align: center; } "
-            "QProgressBar::chunk { background: QLinearGradient(x1: 0, y1: 0, "
-            "x2: 1, y2: 0, stop: 0 #FF8000, stop: 1 orange); border-radius: "
-            "7px; margin: 0px; }");
-    }
+    progressBar->setStyleSheet(
+        "QProgressBar { background-color: #191F29; border: 0px solid grey; "
+        "min-height:6px; max-height: 6px;"
+        "border-radius: 3px; padding: 1px; text-align: right; } "
+        "QProgressBar::chunk { background: QLinearGradient(x1: 0, y1: 0, "
+        "x2: 1, y2: 0, stop: 0 #FCAC8D, stop: 1 #E5658F); border-radius: "
+        "3px; margin: 0px; }");
+    progressBar->setTextVisible(false);
 
+    m_pBarText = new QLabel(this);
+    m_pBarText->setText(progressBar->text());
+    m_pBarText->setVisible(false);
+
+    statusBar()->setStyleSheet("QStatusBar::item{border: 0px;}");
     statusBar()->addWidget(progressBarLabel);
     statusBar()->addWidget(progressBar);
+    statusBar()->addWidget(m_pBarText);
     statusBar()->addPermanentWidget(frameBlocks);
 
     // Install event filter to be able to catch status tip events
@@ -235,7 +243,6 @@ BitcoinGUI::BitcoinGUI(const Config *cfg, const PlatformStyle *_platformStyle,
                 SLOT(showModalOverlay()));
     }
 #endif
-	this->setStyleSheet("QMainWindow{background-color:#0E131A;}");
 }
 
 BitcoinGUI::~BitcoinGUI() {
@@ -890,6 +897,10 @@ void BitcoinGUI::setNumBlocks(int count, const QDateTime &blockDate,
         progressBar->setMaximum(1000000000);
         progressBar->setValue(nVerificationProgress * 1000000000.0 + 0.5);
         progressBar->setVisible(true);
+        progressBar->setTextVisible(false);
+        m_pBarText->setText(progressBar->text());
+        m_pBarText->setVisible(true);
+        m_pBarText->setStyleSheet("QLabel{font-size: 12px;color:rgba(130,133,138,1);}");
 
         tooltip = tr("Catching up...") + QString("<br>") + tooltip;
         if (count != prevBlocks) {

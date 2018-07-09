@@ -50,7 +50,7 @@ struct ChainTxData {
 class CChainParams {
 public:
     enum Base58Type {
-        PUBKEY_ADDRESS = 0,
+        PUBKEY_ADDRESS,
         SCRIPT_ADDRESS,
         SECRET_KEY,
         EXT_PUBLIC_KEY,

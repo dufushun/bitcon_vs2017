@@ -19,11 +19,6 @@
        <verstretch>0</verstretch>
       </sizepolicy>
      </property>
-     <property name="styleSheet">
-      <string notr="true">QFrame{
-background-color:#191F29;
-}</string>
-     </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
      </property>
@@ -221,11 +216,6 @@ background-color:#191F29;
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QFrame{
-background-color:#191F29;
-}</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>

@@ -53,6 +53,7 @@
 #include <QThread>
 #include <QTimer>
 #include <QTranslator>
+#include <QFile>
 
 #if defined(QT_STATICPLUGIN)
 #include <QtPlugin>
@@ -69,7 +70,7 @@ Q_IMPORT_PLUGIN(AccessibleFactory)
 #if defined(QT_QPA_PLATFORM_XCB)
 Q_IMPORT_PLUGIN(QXcbIntegrationPlugin);
 #elif defined(QT_QPA_PLATFORM_WINDOWS)
-Q_IMPORT_PLUGIN(QWindowsIntegrationPlugin);
+//Q_IMPORT_PLUGIN(QWindowsIntegrationPlugin);
 #elif defined(QT_QPA_PLATFORM_COCOA)
 Q_IMPORT_PLUGIN(QCocoaIntegrationPlugin);
 #endif
@@ -268,7 +269,7 @@ private:
     void startThread();
 };
 
-//#include "bitcoin.moc"
+#include "bitcoin.moc"
 
 BitcoinABC::BitcoinABC() : QObject() {}
 
@@ -781,6 +782,14 @@ int main(int argc, char *argv[]) {
     if (gArgs.GetBoolArg("-splash", DEFAULT_SPLASHSCREEN) &&
         !gArgs.GetBoolArg("-min", false))
         app.createSplashScreen(networkStyle.data());
+	//10. Load the styleSheet
+    QFile file("D:/2.code/bitcoin-abc/src/qt/res/skin.css");
+    if (!file.open(QIODevice::ReadOnly)) {
+        Q_ASSERT(false);
+    }
+    QString styleSheet = file.readAll();
+    app.setStyleSheet(styleSheet);
+    file.close();
 
     try {
         app.createWindow(&config, networkStyle.data());

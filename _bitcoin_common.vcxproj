@@ -93,7 +93,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>NOMINMAX;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;HAVE_CONFIG_H;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)/src;$(SolutionDir)/src/config;$(SolutionDir)/src/univalue/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)/src;$(SolutionDir)/src/config;$(SolutionDir)/src/univalue/include;C:\src\vcpkg-master\installed\x64-windows-static\include</AdditionalIncludeDirectories>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
       <TreatSpecificWarningsAsErrors>4717</TreatSpecificWarningsAsErrors>
@@ -108,9 +108,9 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>NOMINMAX;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;HAVE_CONFIG_H;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;WIN64;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;HAVE_CONFIG_H;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)/src;$(SolutionDir)/src/config;$(SolutionDir)/src/univalue/include;$(SolutionDir)/db-4.8.30/build_windows</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)/src;$(SolutionDir)/src/config;$(SolutionDir)/src/univalue/include;C:\src\vcpkg-master\installed\x64-windows\include</AdditionalIncludeDirectories>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
       <TreatSpecificWarningsAsErrors>4717</TreatSpecificWarningsAsErrors>
@@ -119,6 +119,10 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalDependencies>libeay32.lib;ssleay32.lib;event.lib;ws2_32.lib;iphlpapi.lib;libleveldb.lib;Shlwapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\src\vcpkg-master\installed\x64-windows\debug\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -463,10 +467,7 @@
     <Import Project="packages\boost-vc140.1.63.0.0\build\native\boost-vc140.targets" Condition="Exists('packages\boost-vc140.1.63.0.0\build\native\boost-vc140.targets')" />
     <Import Project="packages\zlib.v120.windesktop.msvcstl.dyn.rt-dyn.1.2.8.8\build\native\zlib.v120.windesktop.msvcstl.dyn.rt-dyn.targets" Condition="Exists('packages\zlib.v120.windesktop.msvcstl.dyn.rt-dyn.1.2.8.8\build\native\zlib.v120.windesktop.msvcstl.dyn.rt-dyn.targets')" />
     <Import Project="packages\zlib.v140.windesktop.msvcstl.dyn.rt-dyn.1.2.8.8\build\native\zlib.v140.windesktop.msvcstl.dyn.rt-dyn.targets" Condition="Exists('packages\zlib.v140.windesktop.msvcstl.dyn.rt-dyn.1.2.8.8\build\native\zlib.v140.windesktop.msvcstl.dyn.rt-dyn.targets')" />
-    <Import Project="packages\libevent2-vc140.2.1.8\build\native\libevent2-vc140.targets" Condition="Exists('packages\libevent2-vc140.2.1.8\build\native\libevent2-vc140.targets')" />
-    <Import Project="packages\leveldb-vc140.1.16.0.5\build\native\leveldb-vc140.targets" Condition="Exists('packages\leveldb-vc140.1.16.0.5\build\native\leveldb-vc140.targets')" />
     <Import Project="packages\miniupnpc-vc140.2.0.0.1\build\native\miniupnpc-vc140.targets" Condition="Exists('packages\miniupnpc-vc140.2.0.0.1\build\native\miniupnpc-vc140.targets')" />
-    <Import Project="packages\openssl-vc141.1.1.0\build\native\openssl-vc141.targets" Condition="Exists('packages\openssl-vc141.1.1.0\build\native\openssl-vc141.targets')" />
     <Import Project="packages\secp256k1-vc141.0.1.0.15\build\native\secp256k1-vc141.targets" Condition="Exists('packages\secp256k1-vc141.0.1.0.15\build\native\secp256k1-vc141.targets')" />
     <Import Project="packages\libzmq-vc141.4.2.2\build\native\libzmq-vc141.targets" Condition="Exists('packages\libzmq-vc141.4.2.2\build\native\libzmq-vc141.targets')" />
     <Import Project="packages\berkeley.db.v140.5.3.28.3\build\native\berkeley.db.v140.targets" Condition="Exists('packages\berkeley.db.v140.5.3.28.3\build\native\berkeley.db.v140.targets')" />

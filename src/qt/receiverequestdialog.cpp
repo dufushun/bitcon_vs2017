@@ -39,7 +39,6 @@ QRImageWidget::QRImageWidget(QWidget *parent) : QLabel(parent), contextMenu(0) {
     QAction *copyImageAction = new QAction(tr("&Copy Image"), this);
     connect(copyImageAction, SIGNAL(triggered()), this, SLOT(copyImage()));
     contextMenu->addAction(copyImageAction);
-	this->setStyleSheet("QRImageWidget{background-color:#191F29;}");
 }
 
 QImage QRImageWidget::exportImage() {

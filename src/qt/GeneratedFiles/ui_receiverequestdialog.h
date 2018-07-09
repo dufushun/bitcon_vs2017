@@ -43,9 +43,6 @@ public:
         if (ReceiveRequestDialog->objectName().isEmpty())
             ReceiveRequestDialog->setObjectName(QStringLiteral("ReceiveRequestDialog"));
         ReceiveRequestDialog->resize(487, 597);
-        ReceiveRequestDialog->setStyleSheet(QLatin1String("QDialog{\n"
-"background-color:#0E131A;\n"
-"}"));
         verticalLayout_3 = new QVBoxLayout(ReceiveRequestDialog);
         verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
         lblQRCode = new QRImageWidget(ReceiveRequestDialog);
@@ -56,7 +53,6 @@ public:
         sizePolicy.setHeightForWidth(lblQRCode->sizePolicy().hasHeightForWidth());
         lblQRCode->setSizePolicy(sizePolicy);
         lblQRCode->setMinimumSize(QSize(300, 320));
-        lblQRCode->setStyleSheet(QStringLiteral(""));
         lblQRCode->setTextFormat(Qt::PlainText);
         lblQRCode->setAlignment(Qt::AlignCenter);
         lblQRCode->setWordWrap(true);
@@ -71,9 +67,6 @@ public:
         sizePolicy1.setHeightForWidth(outUri->sizePolicy().hasHeightForWidth());
         outUri->setSizePolicy(sizePolicy1);
         outUri->setMinimumSize(QSize(0, 50));
-        outUri->setStyleSheet(QLatin1String("QTextEdit{\n"
-"background-color:#191F29;\n"
-"}"));
         outUri->setFrameShape(QFrame::NoFrame);
         outUri->setFrameShadow(QFrame::Plain);
         outUri->setTabChangesFocus(true);
@@ -85,42 +78,18 @@ public:
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         btnCopyURI = new QPushButton(ReceiveRequestDialog);
         btnCopyURI->setObjectName(QStringLiteral("btnCopyURI"));
-        btnCopyURI->setStyleSheet(QLatin1String("QPushButton{\n"
-"	border:1px solid #82858A;\n"
-"	background-color:rgba(130,133,138,1);\n"
-"	border-radius:3px;\n"
-"	font-size:12px;\n"
-"	font-family:Microsoft YaHei;\n"
-"	font-color:rgba(130,133,138,1);\n"
-"}"));
         btnCopyURI->setAutoDefault(false);
 
         horizontalLayout->addWidget(btnCopyURI);
 
         btnCopyAddress = new QPushButton(ReceiveRequestDialog);
         btnCopyAddress->setObjectName(QStringLiteral("btnCopyAddress"));
-        btnCopyAddress->setStyleSheet(QLatin1String("QPushButton{\n"
-"	border:1px solid #82858A;\n"
-"	background-color:rgba(130,133,138,1);\n"
-"	border-radius:3px;\n"
-"	font-size:12px;\n"
-"	font-family:Microsoft YaHei;\n"
-"	font-color:rgba(130,133,138,1);\n"
-"}"));
         btnCopyAddress->setAutoDefault(false);
 
         horizontalLayout->addWidget(btnCopyAddress);
 
         btnSaveAs = new QPushButton(ReceiveRequestDialog);
         btnSaveAs->setObjectName(QStringLiteral("btnSaveAs"));
-        btnSaveAs->setStyleSheet(QLatin1String("QPushButton{\n"
-"	border:1px solid #82858A;\n"
-"	background-color:rgba(130,133,138,1);\n"
-"	border-radius:3px;\n"
-"	font-size:12px;\n"
-"	font-family:Microsoft YaHei;\n"
-"	font-color:rgba(130,133,138,1);\n"
-"}"));
         btnSaveAs->setAutoDefault(false);
 
         horizontalLayout->addWidget(btnSaveAs);
@@ -131,14 +100,6 @@ public:
 
         buttonBox = new QDialogButtonBox(ReceiveRequestDialog);
         buttonBox->setObjectName(QStringLiteral("buttonBox"));
-        buttonBox->setStyleSheet(QLatin1String("QPushButton{\n"
-"	border:1px solid #82858A;\n"
-"	background-color:rgba(130,133,138,1);\n"
-"	border-radius:3px;\n"
-"	font-size:12px;\n"
-"	font-family:Microsoft YaHei;\n"
-"	font-color:rgba(130,133,138,1);\n"
-"}"));
         buttonBox->setStandardButtons(QDialogButtonBox::Close);
 
         horizontalLayout->addWidget(buttonBox);
